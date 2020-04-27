@@ -1,0 +1,27 @@
+CREATE TABLE `articulus_table` (
+  `id` INTEGER(11) NOT NULL AUTO_INCREMENT,
+  `articulus_columns` TINYTEXT COLLATE utf8_general_ci NOT NULL,
+  `01.model` VARCHAR(4) COLLATE utf8_general_ci NOT NULL,
+  `02.type_connection` VARCHAR(1) COLLATE utf8_general_ci DEFAULT NULL,
+  `03.height` INTEGER(1) UNSIGNED ZEROFILL NOT NULL,
+  `04.width` INTEGER(2) NOT NULL,
+  `05.exists` VARCHAR(1) COLLATE utf8_general_ci NOT NULL,
+  `06.temperature_controller` VARCHAR(2) COLLATE utf8_general_ci NOT NULL,
+  `07.connection_side` VARCHAR(1) COLLATE utf8_general_ci NOT NULL,
+  `08.center distance` VARCHAR(6) COLLATE utf8_general_ci NOT NULL,
+  `09.RAL` INTEGER(4) NOT NULL,
+  `10.note` INTEGER(1) NOT NULL,
+  PRIMARY KEY USING BTREE (`id`),
+  UNIQUE KEY `01.model` USING BTREE (`01.model`),
+  UNIQUE KEY `03.size` USING BTREE (`03.height`),
+  UNIQUE KEY `04.width` USING BTREE (`04.width`),
+  UNIQUE KEY `05.exists` USING BTREE (`05.exists`),
+  UNIQUE KEY `06.temperature_controller` USING BTREE (`06.temperature_controller`),
+  UNIQUE KEY `07.connection_side` USING BTREE (`07.connection_side`),
+  UNIQUE KEY `08.center distance` USING BTREE (`08.center distance`),
+  UNIQUE KEY `09.RAL` USING BTREE (`09.RAL`),
+  UNIQUE KEY `10.note` USING BTREE (`10.note`),
+  UNIQUE KEY `02.type_connection` USING BTREE (`02.type_connection`)
+) ENGINE=InnoDB
+ROW_FORMAT=DYNAMIC CHARACTER SET 'utf8' COLLATE 'utf8_general_ci'
+;
