@@ -28,3 +28,47 @@ BEGIN
     param_09.RAL,
     param_10.note);
 END
+
+
+
+BEGIN
+  SELECT 
+    `id`,
+    `articulus_columns`,
+    `01.model`,
+    `02.type_connection`,
+    `03.height`,
+    `04.width`,
+    `05.exists`,
+    `06.temperature_controller`,
+    `07.connection_side`,
+    `08.center distance`,
+    `09.RAL`,
+    `10.note`
+  FROM 
+    `articulus_table`;
+END
+
+
+
+BEGIN
+  SELECT 
+    `id`,
+    `articulus_columns`,
+    `01.model`,
+    `02.type_connection`,
+    `03.height`,
+    `04.width`,
+    `05.exists`,
+    `06.temperature_controller`,
+    `07.connection_side`,
+    `08.center distance`,
+    `09.RAL`,
+    `10.note`
+  FROM 
+    `articulus_table`;
+END
+
+
+
+
