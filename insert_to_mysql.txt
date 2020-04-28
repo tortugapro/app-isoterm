@@ -1,0 +1,30 @@
+BEGIN
+  INSERT INTO 
+    `articulus_table`
+  (
+    `id`,
+    `articulus_columns`,
+    `01.model`,
+    `02.type_connection`,
+    `03.height`,
+    `04.width`,
+    `05.exists`,
+    `06.temperature_controller`,
+    `07.connection_side`,
+    `08.center distance`,
+    `09.RAL`,
+    `10.note`) 
+  VALUE (
+    param_id,
+    param_articulus_columns,
+    param_01.model,
+    param_02.type_connection,
+    param_03.height,
+    param_04.width,
+    param_05.exists,
+    param_06.temperature_controller,
+    param_07.connection_side,
+    param_08.center distance,
+    param_09.RAL,
+    param_10.note);
+END
