@@ -1,8 +1,6 @@
-BEGIN
-  INSERT INTO 
+ INSERT INTO 
     `articulus_table`
   (
-    `id`,
     `articulus_columns`,
     `01.model`,
     `02.type_connection`,
@@ -15,20 +13,17 @@ BEGIN
     `09.RAL`,
     `10.note`) 
   VALUE (
-    param_id,
-    param_articulus_columns,
-    param_01.model,
-    param_02.type_connection,
-    param_03.height,
-    param_04.width,
-    param_05.exists,
-    param_06.temperature_controller,
-    param_07.connection_side,
-    param_08.center distance,
-    param_09.RAL,
-    param_10.note);
-END
-
+    'СКН--204LT1R05090161',
+    'СКН',
+    'П',
+    2,
+    04,
+    'L',
+    'T1',
+    'R',
+    300,
+    9016,
+    1);
 
 
 
